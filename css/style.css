@@ -111,6 +111,7 @@ main{
 .facts-card-container{
     display: flex;
     justify-content: space-between;
+    gap: 1.25rem;
 }
 .facts-card-container .card{
     border: 1px solid #FF900E;
@@ -130,6 +131,20 @@ main{
     margin-bottom: 10px;
 
 }
+/* sponsors style  */
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width: 160px;
+}
 
 
 
@@ -148,7 +163,9 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container{
+    .teams-container,
+    .facts-card-container,
+    .sponsors-img-container{
         flex-direction: column;
     }
     
@@ -162,6 +179,7 @@ main{
         padding-left: 20px; 
     }
     
+    
 }
 
 /* tablet or media devices */
@@ -169,7 +187,9 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, 
+    .teams-container,
+    .sponsors-img-container{
         flex-direction:column;
     }
 }
